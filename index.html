@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="leaf-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <header id="heads">
+        <a href="#" class="logo"><img src="leaf-removebg-preview.png" alt=""></a>
+
+        <nav>
+            <ul>
+                <li><a onclick="scrollToSection('one')">Home</a></li>
+                <li><a onclick="scrollToSection('two')">Health Topics</a></li>
+                <li><a onclick="scrollToSection('three')">Fitness & Nutrition</a></li>
+                
+            </ul>
+        </nav>
+
+    </header>
+
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+        function scrollToSection(sectionId) {
+      const targetElement = document.getElementById(sectionId);
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+      });
+    }
+    </script>
+    
+    <div class="script">
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+            function scrollToSection(sectionId) {
+          const targetElement = document.getElementById(sectionId);
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest'
+          });
+        }
+    </script>  
+
+    <div class="container">
+        <section id="one">
+            <div class="one-content">
+                <h1>
+                    Welcome to HealthHub
+                </h1>
+                <br>
+                <p>
+                    your go-to destination for reliable health information and tips for a healthier lifestyle.                </p>
+                <a onclick="scrollToSection('two')" class="hero-btn">For more information about Health.</a>
+            </div>
+        </section>
+
+        <section id="two">
+            <div class="two-content">
+                <h1>
+                    Health Topics
+                </h1>
+                
+                <p>
+                    Health can be categorized in various ways based on different perspectives and aspects. Here are some common categories of health
+                </p>
+                <a onclick="scrollToSection('categories1')" class="hero-btn">Categories.</a>
+            </div>
+        </section>
+
+        <section id="categories1">
+            <div class="categories-content">
+                <h1>General Health</h1> <br> <br>
+                <p>
+                    General health encompasses overall well-being, including physical, mental, and social aspects. It involves maintaining a healthy lifestyle through balanced nutrition, regular exercise, sufficient sleep, managing stress, and avoiding harmful habits like smoking or excessive alcohol consumption. Regular check-ups with healthcare providers help in early detection and prevention of diseases.
+                </p>
+            </div>
+        </section>
+        <section id="categories2">
+            <div class="categories2-content">
+                <h1>Mental Health</h1> <br> <br>
+                 <p>
+                    Mental health refers to emotional, psychological, and social well-being. It affects how we think, feel, and act. Good mental health involves coping with stress, building resilience, maintaining positive relationships, and seeking help when needed. Mental health conditions such as depression, anxiety, bipolar disorder, and schizophrenia require appropriate treatment and support from mental health professionals.
+                 </p>
+            </div>
+        </section>
+        <section id="categories3">
+            <div class="categories3-content">
+                <h1>Women's Health</h1> <br> <br>
+                 <p>
+                    Women's health focuses on the unique health needs and concerns of women throughout their lifespan. This includes reproductive health, menstrual health, pregnancy, childbirth, menopause, and conditions such as breast cancer, ovarian cancer, and cervical cancer. Regular screenings, such as Pap smears and mammograms, are important for early detection and prevention of certain health issues.
+                 </p>
+            </div>
+        </section>
+        <section id="categories4">
+            <div class="categories4-content">
+                <h1>Men's Health</h1> <br> <br>
+                 <p>
+                    Men's health addresses the specific health issues and concerns that affect men, including prostate health, erectile dysfunction, testosterone levels, and mental health challenges. Regular physical exams, screenings for conditions like prostate cancer, and maintaining a healthy lifestyle are essential for men's overall well-being.
+                 </p>
+            </div>
+        </section>
+        <section id="categories5">
+            <div class="categories5-content">
+                <h1>Children's Health</h1> <br> <br>
+                 <p>
+                    Children's health focuses on the physical, mental, and emotional well-being of infants, children, and adolescents. This includes preventive care such as vaccinations, well-child check-ups, monitoring growth and development milestones, and addressing common childhood illnesses and injuries. Proper nutrition, regular exercise, adequate sleep, and a supportive environment are crucial for children's healthy development.
+                 </p>
+            </div>
+        </section>
+
+        <section id="three">
+            <div class="three-content">
+                <h1>Fitness & Nutrition</h1>
+                <p>                   
+                Fitness and nutrition are two key components of overall health and well-being
+                </p>
+            </div>
+        </section>
+        <section id="fitness">
+            <div class="fitness-content">
+                <h1>Fitness</h1>
+                <br> <br>
+                <p>                   
+                    Fitness refers to the ability to perform physical activity and exercise efficiently and effectively. It encompasses various aspects such as cardiovascular endurance, muscular strength, flexibility, and body composition. Regular physical activity is essential for maintaining and improving fitness levels, which can lead to numerous health benefits, including reduced risk of chronic diseases, improved mood and mental health, better sleep, and enhanced quality of life. Examples of fitness activities include walking, jogging, cycling, swimming, strength training, yoga, and sports.
+                </p>
+            </div>
+        </section>
+        <section id="nutrition">
+            <div class="nutrition-content">
+                <h1>Nutrition</h1>
+                <br> <br>
+                <p>                   
+                    Nutrition, on the other hand, involves the intake of food and nutrients necessary for growth, development, and maintaining health. A balanced diet that includes a variety of nutrient-rich foods such as fruits, vegetables, whole grains, lean proteins, and healthy fats is essential for providing the body with the energy and nutrients it needs to function optimally.    
+                </p>
+            </div>
+        </section>
+    
+        
+    
+        </section>
+
+
+
+
+
+</body>
+</html>

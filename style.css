@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-shadow: 1px 1px 4px black;  
+    text-align: center;
+}
+
+body {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 1px 1px 4px black;  
+    text-align: center;
+}
+
+header .logo img{
+    float: left;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    transition: 0.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+    text-shadow: 1px 1px 4px black;
+
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background-color: rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 4px black;
+}
+
+header.sticky ul li a {
+    color: rgb(73, 208, 98);
+}
+
+header nav ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li {
+    
+    text-align: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: aliceblue;
+    text-shadow: 1px 1px 4px black;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    cursor: pointer;  
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y:inherit;
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid green;
+    background: #f44336;
+    transition: 1s;
+}
+
+#one {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(vegetable-skewer-3317055_1920.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 1px 1px 4px black;  
+    text-align: center; 
+}
+
+.one-content {
+    max-width: 600px;
+}
+
+.one-content p {
+    margin-left: 30%;
+    margin: 15px 0 30px;
+}
+
+.one-content h1 {
+    font-size: 200%;
+}
+
+#two {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(cook-2364221_1920.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: fadeInTwo;
+    justify-content: space-around;
+    text-shadow: 1px 1px 4px black;   
+    text-align: center; 
+}
+
+.two-content {
+    max-width: 600px;
+}
+
+.two-content p {
+    margin-left: 30%;
+    margin: 15px 0 30px;
+}
+
+.two-content h1 {
+    font-size: 200%;
+}
+
+#categories1 {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(woman-2827304_1920.jpg);
+    height: 130vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: fadeInTwo;
+    justify-content: space-around;
+    text-shadow: 1px 1px 4px black;   
+    text-align: center; 
+}
+
+.categories-content {
+    max-width: 600px;
+}
+
+.categories-content h1 {
+    font-size: 50px;
+}
+
+.categories-content p {
+    text-align: justify;
+    font-size: larger;
+}
+#categories2 {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(girl-3758607_1920.jpg);
+    height: 130vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: fadeInTwo;
+    justify-content: space-around;
+    text-shadow: 1px 1px 4px black;   
+    text-align: center; 
+}
+
+.categories2-content {
+    max-width: 600px;
+}
+
+.categories2-content h1 {
+    font-size: 50px;
+}
+
+
+.categories2-content p {
+    text-align: justify;
+    font-size: larger;
+}
+#categories3 {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(yoga-3053487_1920.jpg);
+    height: 130vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: fadeInTwo;
+    justify-content: space-around;
+    text-shadow: 1px 1px 4px black;   
+    text-align: center; 
+}
+
+.categories3-content {
+    max-width: 600px;
+}
+
+.categories3-content h1 {
+    font-size: 50px;
+}
+
+
+.categories3-content p {
+    text-align: justify;
+    font-size: larger;
+}
+#categories4 {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(fitness-1847866_1920.jpg);
+    height: 150vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: fadeInTwo;
+    justify-content: space-around;
+    text-shadow: 1px 1px 4px black;   
+    text-align: center; 
+}
+
+.categories4-content {
+    max-width: 600px;
+}
+
+.categories4-content h1 {
+    font-size: 50px;
+}
+
+
+.categories4-content p {
+    text-align: justify;
+    font-size: larger;
+}
+#categories5 {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(children-5626030_1920.jpg);
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: fadeInTwo;
+    justify-content: space-around;
+    text-shadow: 1px 1px 4px black;   
+    text-align: center; 
+}
+
+.categories5-content {
+    max-width: 600px;
+}
+
+.categories5-content h1 {
+    font-size: 50px;
+}
+
+
+.categories5-content p {
+    text-align: justify;
+    font-size: larger;
+}
+
+#three {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(carrots-2387394_1920.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: fadeInTwo;
+    justify-content: space-around;
+    text-shadow: 1px 1px 4px black;  
+}
+
+.three-content {
+    max-width: 600px;
+}
+
+.three-content p {
+    margin-left: 30%;
+    margin: 15px 0 30px;
+}
+
+.three-content h1 {
+    font-size: 200%;
+}
+
+#fitness {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(man-2037255_1920.jpg);
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: fadeInTwo;
+    justify-content: space-around;
+    text-shadow: 1px 1px 4px black; 
+}
+
+.fitness-content {
+    max-width: 600px;
+}
+
+.fitness-content h1 {
+    font-size: 50px;
+}
+
+
+.fitness-content p {
+    text-align: justify;
+    font-size: larger;
+}
+#nutrition {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(vegetables-790022_1920.jpg);
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: fadeInTwo;
+    justify-content: space-around;
+    text-shadow: 1px 1px 4px black; 
+}
+
+.nutrition-content {
+    max-width: 600px;
+}
+
+.nutrition-content h1 {
+    font-size: 50px;
+}
+
+
+.nutrition-content p {
+    text-align: justify;
+    font-size: larger;
+}
+
+#four {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(woman-865021_1920.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: fadeInTwo;
+    justify-content: space-around;
+    text-shadow: 1px 1px 4px black;
+}
